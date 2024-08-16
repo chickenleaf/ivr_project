@@ -46,13 +46,13 @@ This project demonstrates how to use Twilio's API with Node.js to handle phone c
 - `TARGET_NUMBER`: The phone number to which the call will be made.
 - `NGROK_URL`: The public URL provided by ngrok that tunnels to your local server. 
 
-### 3.1 **Run ngrok**
+   **Run ngrok**
 
-To expose your local server to the internet, use ngrok. Run the following command in a separate terminal window:
+   To expose your local server to the internet, use ngrok. Run the following command in a separate terminal window:
 
-```
-ngrok http 3000
-```
+  ```
+  ngrok http 3000
+  ```
 
 ngrok will provide a public URL (e.g., `http://<your-ngrok-subdomain>.ngrok.io`) that you need to use in the `.env` file under `NGROK_URL`.
 
