@@ -40,6 +40,22 @@ This project demonstrates how to use Twilio's API with Node.js to handle phone c
 
    Replace the placeholders with your actual Twilio account SID, auth token, Twilio number, target number, and ngrok URL.
 
+
+- `TWILIO_AUTH_TOKEN`: Your Twilio auth token.
+- `TWILIO_NUMBER`: The Twilio phone number you are using to make calls.
+- `TARGET_NUMBER`: The phone number to which the call will be made.
+- `NGROK_URL`: The public URL provided by ngrok that tunnels to your local server. 
+
+### 3.1 **Run ngrok**
+
+To expose your local server to the internet, use ngrok. Run the following command in a separate terminal window:
+
+```
+ngrok http 3000
+```
+
+ngrok will provide a public URL (e.g., `http://<your-ngrok-subdomain>.ngrok.io`) that you need to use in the `.env` file under `NGROK_URL`.
+
 4. **Run the Server**
 
    Start the server using:
@@ -153,6 +169,3 @@ app.listen(3000, () => {
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Replace `<repository-url>` and `<repository-folder>` with the actual URL and folder name of your repository. Adjust any details as needed for your specific setup.
