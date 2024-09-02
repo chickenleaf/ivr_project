@@ -1,6 +1,6 @@
 # Twilio Call Handling with Node.js
 
-This project demonstrates how to use Twilio's API with Node.js to handle phone calls and send SMS messages based on user input. It uses the `twilio` library to interact with Twilio's API and `express` to create a web server.
+This project demonstrates how to use Twilio's API with Node.js to handle phone calls and send SMS messages based on user input. It uses the `twilio` library to interact with Twilio's API and `express/node.js` to create a web server.
 
 ## Features
 
